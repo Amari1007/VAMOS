@@ -1,0 +1,11 @@
+*{
+	padding: 0px;
+	margin: 0px;
+    box-sizing: border-box;
+}
+
+#mymap{
+    height: 500px;
+    border: 1px solid gray;
+	margin-bottom:20px;
+}
