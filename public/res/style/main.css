@@ -1,5 +1,14 @@
 *{
+    box-sizing: border-box;
 	padding: 0px;
 	margin: 0px;
-    box-sizing: border-box;
+}
+
+html{
+	font-size:62.5%;
+}
+
+body{
+	height:100vh;
+	font:1.5rem Helvetica, Arial;
 }

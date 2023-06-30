@@ -1,0 +1,25 @@
+nav, main, footer{
+	border:1px solid black;
+}
+
+.grid-container{
+	display:grid;
+	grid-template-areas: 'nav' 'main' 'footer';
+	grid-template-columns: 1fr;
+	grid-template-rows: 5rem 4fr 5rem;
+	/* row-gap: 2rem; */
+	height:100%;
+}
+
+main{
+	background-image: url("../img/picture2.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size:cover;
+	background-attachment:scroll; /*scroll*/
+}
+
+.main-blur{
+	background-color:rgba(0,0,0,0.6);
+	height:550px;
+}
