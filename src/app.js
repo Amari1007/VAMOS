@@ -8,7 +8,7 @@ const app = express();
 /*const Datastore = require('nedb');
 const database = new Datastore("database.db");*/
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 7701;
 app.use(express.static('public'));
 app.use(express.json());
 
