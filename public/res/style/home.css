@@ -1,25 +1,107 @@
-nav, main, footer{
-	border:1px solid black;
-}
-
 .grid-container{
 	display:grid;
 	grid-template-areas: 'nav' 'main' 'footer';
 	grid-template-columns: 1fr;
-	grid-template-rows: 5rem 4fr 5rem;
+	grid-template-rows: 10rem 2500px 20rem;
 	/* row-gap: 2rem; */
 	height:100%;
+	width:100%;
 }
 
+.header, .options, nav, main, footer{
+	/* border:1px solid black; */
+}
+
+nav{
+	display:flex;
+	grid-area:nav;
+	align-items:stretch;
+	justify-content:center;
+	background-color:rgba(0,0,0,0.85);
+	color:white;
+}
+
+.header{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	width:40%;
+	font:6rem Voice In My Head;
+}
+
+.options{
+	display:flex;
+	width:60%;
+	align-items:flex-end;
+	justify-content:center;	
+	font:1.5rem Helvetica;
+	font-weight:bold;
+}
+
+.options ul li{
+	display:inline-block;
+	list-style:none;
+	margin:20px;
+}
+
+
+/********* MAIN *************/
 main{
+	color:white;
+}
+
+.bg1{
 	background-image: url("../img/picture2.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size:cover;
 	background-attachment:scroll; /*scroll*/
+	height:34%;
+	width:100%;
+}
+
+.bg2{
+	background-image: url("../img/picture3.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size:cover;
+	background-attachment:fixed; /*scroll*/
+	height:33%;
+	width:100%;
+}
+
+.bg3{
+	background-image: url("../img/picture1.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size:cover;
+	background-attachment:scroll; /*scroll*/
+	height:33%;
+	width:100%;
 }
 
 .main-blur{
-	background-color:rgba(0,0,0,0.6);
-	height:550px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	background-color:rgba(0,0,0,0.75);
+	height:100%;
+	blur:10px;
+}
+
+footer{
+	display:flex;
+	font:1.4rem Helvetica;
+	font-weight:bold;
+	wrap:wrap;
+	justify-content:center;
+	align-items:center;
+	background-color:rgba(0,0,0,0.9);
+	color:rgb(255,255,255);
+}
+
+footer ul li{
+	list-style:none;
+	display:inline-block;
+	margin:30px;
 }

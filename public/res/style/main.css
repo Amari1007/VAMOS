@@ -1,14 +1,39 @@
+/******** UNIVERSAL ********/
+
 *{
     box-sizing: border-box;
 	padding: 0px;
 	margin: 0px;
 }
 
+a{
+	text-decoration:none;
+	color:white;
+}
+
+/******** FONTS *********/
+@font-face{
+	font-family:'Kremlin';
+	src: url('../fonts/kremlin.ttf');
+}
+
+@font-face{
+	font-family:'Russian';
+	src: url('../fonts/Russian.ttf');
+}
+
+@font-face{
+	font-family:'Voice In My Head';
+	src: url('../fonts/Voice In My Head.otf');
+}
+
 html{
 	font-size:62.5%;
+	scroll-behavior: smooth;
 }
 
 body{
 	height:100vh;
 	font:1.5rem Helvetica, Arial;
+	scroll-behavior: smooth;
 }
