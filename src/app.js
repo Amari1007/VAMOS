@@ -11,7 +11,6 @@ const database = new Datastore("database.db");*/
 
 const PORT = process.env.PORT || 7701;
 app.use(express.static('public'));
-app.use(express.static('./src'));
 app.use(express.json());
 
 console.log("process.argv:", process.argv[0]);

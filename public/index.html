@@ -8,7 +8,8 @@
 	<link type="text/css" rel="stylesheet" href="./res/style/main.css">
 	<link type="text/css" rel="stylesheet" href="./res/style/home.css">
 	<script src="https://kit.fontawesome.com/b2146e0ecb.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/x-icon" href="./res/img/mw.png">
+    <script type="module" src="view_loader.js"> </script>
+	<link rel="icon" type="image/x-icon" href="./res/img/mw.png">
 	<title>Home</title>
 </head>
 
@@ -16,17 +17,7 @@
 	<div class="grid-container">
 	
 	   <nav>
-		   <div class="header"> 
-			   <p> <span style="font:4rem Verdana">Visit</span> Malawi</p>
-		   </div>
-		   
-		   <div class="options">
-			   <ul>
-				   <li>Explore <i class="fa fa-compass" style="font-size:2rem" aria-hidden="true"></i></li>
-				   <li>Other</li>
-				   <li>About website</li>
-			   </ul>
-		   </div>
+			<!--CODE FROM ./nav.js-->
 	   </nav>
 	   
 	   <main>
@@ -54,23 +45,12 @@
 	   </main>
 	   
 	   <footer>
-		   <div>
-			   <ul>
-				   <li>VISIT MALAWI<sup>&reg;</sup> 2023</li>
-				   <li class="btn-goUp" onclick="goUp()">GO UP</li>
-				   <li><i class="fa fa-home" style="font-size:1.7rem" aria-hidden="true"></i></li>
-			   </ul>
-		   </div>
+			<!--CODE FROM ./footer.js-->
 	   </footer>
 	   
 	</div> 
 </body>
-    
-   <script>
-	   function goUp(){
-		   document.body.scrollTop = 0; //SAFARI
-		   document.documentElement.scrollTop = 0; //CHROME, FIREFOX, IE, OPERA
-	   } 
-   </script>
+
+<script src="module1.js"> </script>
 
 </html>
