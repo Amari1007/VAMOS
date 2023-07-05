@@ -2,13 +2,12 @@ function goUp(){
 	document.documentElement.scrollTop = 0; //CHROME, FIREFOX, IE, OPERA
 }
 
-function btn_nav_click(){
-	const btn_home = document.getElementsByClassName("btn-home")[0];
-	const btn_explore = document.getElementsByClassName("btn-explore")[0];
-	const btn_other = document.getElementsByClassName("btn-other")[0];
-	const btn_about_web = document.getElementsByClassName("btn-about-website")[0];
-	const btn_about = document.getElementsByClassName("btn-about-website")[0];
-	const btn = document.getElementsByClassName("btn-about-website")[0];
+//THIS SHOULD LOAD AFTER DOM IS LOADED
+async function btn_nav_click(){
+	const btn_home = await document.getElementsByClassName("btn-home")[0];
+	const btn_explore = await document.getElementsByClassName("btn-explore")[0];
+	const btn_other = await document.getElementsByClassName("btn-other")[0];
+	const btn_about_web = await document.getElementsByClassName("btn-about-website")[0];
 
 	btn_home.addEventListener('click', ()=>{
 		window.location.assign("./");
@@ -19,4 +18,7 @@ function btn_nav_click(){
 	});
 
 }
-btn_nav_click();
+
+window.addEventListener('DOMContentLoaded', ()=>{
+	btn_nav_click();
+});

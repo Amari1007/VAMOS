@@ -1,0 +1,43 @@
+.header, .options, nav, main, footer{
+	border:0px solid black;
+}
+
+.bg1{
+    /*border: 1px solid black;*/
+    background-image: url("../img/Lake\ Malawi.jpg");;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    background-attachment: scroll;
+    width:100%;
+    height: 600px;
+}
+
+.bg2{
+    /*border: 1px solid black;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width:100%;
+    height: 500px;
+}
+
+.main-blur{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(15, 58, 75, 0.6);
+    height: 100%;
+    width: 100%;
+}
+
+.main-blur h1{
+    font-size: 5rem;
+    color: white;
+}
+
+.main-blur p{
+    font-size: 1.8rem;
+    color: white;
+}
