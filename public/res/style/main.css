@@ -44,7 +44,7 @@ body{
 	display:grid;
 	grid-template-areas: 'nav' 'main' 'footer';
 	grid-template-columns: 1fr;
-	grid-template-rows: 10rem 2500px 20rem;
+	grid-template-rows: 10rem 2300px 30rem;
 	/* row-gap: 2rem; */
 	height:100%;
 	width:100%;
@@ -89,7 +89,7 @@ nav{
 
 footer{
 	display:flex;
-	font:1.4rem Helvetica;
+	font:1.5rem Helvetica, bold;
 	font-weight:bold;
 	flex-wrap: wrap;
 	justify-content:center;
