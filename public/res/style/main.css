@@ -50,6 +50,7 @@ body{
 	width:100%;
 }
 
+/********* NAV *************/
 nav{
 	display:flex;
 	grid-area:nav;
@@ -61,6 +62,11 @@ nav{
 
 .btn-home, .btn-explore, .btn-other, .btn-about-website{
 	cursor: pointer;
+}
+
+.navbar li a{
+	display: block;
+	padding: 10px 20px;
 }
 
 .header{
@@ -82,11 +88,34 @@ nav{
 
 .options ul li{
 	display:inline-block;
-	list-style:none;
+	list-style-type:none;
 	margin:20px;
 }
 
+.dropdown-menu{
+	display: none;
+	position: absolute;
+	min-width: 150px;
+	background-color: rgba(0,0,0,0.8);
+	color:white;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
 
+.dropdown-menu li{
+	display: block !important;
+	text-align: center;
+}
+
+.dropdown:hover .dropdown-menu{
+	display: block;
+}
+
+.dropdown-menu li:hover{
+	border-bottom: 1px solid white;
+}
+
+/********** FOOTER ***********/
 footer{
 	display:flex;
 	font:1.5rem Helvetica, bold;
@@ -99,7 +128,7 @@ footer{
 }
 
 footer ul li{
-	list-style:none;
+	list-style-type:none;
 	display:inline-block;
 	margin:30px;
 }
