@@ -44,20 +44,3 @@ main{
 	background-color:rgba(0,0,0,0.75);
 	height:100%;
 }
-
-
-/********* SCREEN UNDER 500PX WIDTH***********/
-@media only screen and (max-width:800px){
-	nav{
-		padding:3px;
-	}
-
-	.header{
-		width: 55%;
-	}
-
-	.options{
-		width: 45%;
-	}
-
-}

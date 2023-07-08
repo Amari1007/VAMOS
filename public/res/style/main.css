@@ -44,11 +44,13 @@ body{
 	display:grid;
 	grid-template-areas: 'nav' 'main' 'footer';
 	grid-template-columns: 1fr;
-	grid-template-rows: 10rem 2300px 30rem;
+	grid-template-rows: 10rem auto 30rem;
 	/* row-gap: 2rem; */
 	height:100%;
 	width:100%;
+	overflow:hidden;
 }
+
 
 /********* NAV *************/
 nav{
@@ -75,6 +77,10 @@ nav{
 	align-items:center;
 	width:40%;
 	font:4rem Voice In My Head;
+}
+
+.header .header-plain{
+	font: 3.7rem Verdana;
 }
 
 .options{
@@ -115,6 +121,17 @@ nav{
 	border-bottom: 1px solid white;
 }
 
+
+/**** OPTIONS MIN BUTTON ****/
+.options-minscreen{
+	display: none;
+}
+
+.options-minscreen .dropdown-min{
+	display: none;
+}
+
+
 /********** FOOTER ***********/
 footer{
 	display:flex;
@@ -131,4 +148,66 @@ footer ul li{
 	list-style-type:none;
 	display:inline-block;
 	margin:30px;
+}
+
+nav, nav .header, nav .options{
+	border: 1px solid black;
+}
+
+
+/********* SCREEN UNDER 680PX WIDTH***********/
+@media only screen and (max-width:680px){
+	nav .header{
+		font-size: 3rem;
+	}
+
+	nav .options{
+		font-size: 1.25rem;
+	}
+	
+}
+
+
+/********* SCREEN UNDER 600PX WIDTH***********/
+@media only screen and (max-width:600px){
+	nav .header{
+		width:70%;
+	}
+
+	.options .navbar{
+		display: none;
+	}
+
+	nav .options{
+		align-items: center;
+		justify-content: center;
+	}
+
+	.options-minscreen{
+		display: block;
+	}
+
+	.options-minscreen button img{
+		border-radius: 3px;
+	}
+
+	.options-minscreen .dropdown-min{
+		position:absolute;
+		margin: 0;
+		padding: 0;
+		width:auto;
+		background-color: rgba(0,0,0,0.85);
+		z-index: 1;
+	}
+
+	.options-minscreen .dropdown-min ul{
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.options-minscreen .dropdown-min li{
+		display: block;
+	}
+
 }

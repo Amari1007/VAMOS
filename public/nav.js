@@ -1,7 +1,7 @@
 export const nav = async() => {
     return `
         <div class="header"> 
-            <p class="btn-home"> <span style="font:4rem Verdana">Visit</span> Malawi</p>
+            <p class="btn-home"> <span class="header-plain">Visit</span> Malawi</p>
         </div>
         
         <div class="options">
@@ -17,6 +17,22 @@ export const nav = async() => {
                 <li class="btn-other">Other</li>
                 <li class="btn-about-website">About website</li>
             </ul>
+
+            <div class="options-minscreen">
+               <button type="button" class="button-toggle">
+                    <img src="./res/img/menu-svgrepo-com.svg" width="30px" alt="">
+               </button>
+
+               <div class="dropdown-min">
+                    <ul>
+                        <li> <a href="#">Explore</a> </li>
+                        <li> <a href="#">Other</a> </li>
+                        <li> <a href="./About.html">About Website</a> </li>
+                    </ul>
+               </div>
+
+            </div>
+
         </div>    
     ` 
 };
