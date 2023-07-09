@@ -25,7 +25,17 @@ export const nav = async() => {
 
                <div class="dropdown-min">
                     <ul>
-                        <li> <a href="#">Explore</a> </li>
+                        <li>
+                            <button type="button" class="min-btn-explore">
+                                Explore 
+                                <i class="fa fa-list-ul" aria-hidden="true"></i>
+                            </button>
+                            <ul class="dropdown-explore-expand">
+                                <li> <a href="./lilongwe.html">Lilongwe</a> </li>
+                                <li> <a href="./lilongwe.html">Blantry</a> </li>
+                                <li> <a href="./lilongwe.html">Zomba</a> </li>
+                            </ul>                        
+                        </li>
                         <li> <a href="#">Other</a> </li>
                         <li> <a href="./About.html">About Website</a> </li>
                     </ul>

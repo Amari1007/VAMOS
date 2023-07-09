@@ -5,6 +5,8 @@ function goUp(){
 //THIS SHOULD LOAD AFTER DOM IS LOADED
 async function btn_nav_click(){
 	const minscreen_dropdown = await document.getElementsByClassName("dropdown-min")[0];
+	const min_btn_explore = await document.getElementsByClassName("min-btn-explore")[0];
+	const dropdown_explore_expand = await document.getElementsByClassName("dropdown-explore-expand")[0];
 	
 	const btn_home = await document.getElementsByClassName("btn-home")[0];
 	const btn_explore = await document.getElementsByClassName("btn-explore")[0];
@@ -26,7 +28,17 @@ async function btn_nav_click(){
 		}else{
 			minscreen_dropdown.style.display = "none";
 		}
-	})
+	});
+
+	min_btn_explore.addEventListener("click", ()=>{
+		if(dropdown_explore_expand.style.display != "block"){
+			dropdown_explore_expand.style.display = "block";
+			min_btn_explore.style.borderBottomWidth = "2px";
+		}else{
+			dropdown_explore_expand.style.display = "none";
+			min_btn_explore.style.borderBottomWidth = "0px";
+		}
+	});
 
 }
 

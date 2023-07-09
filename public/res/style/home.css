@@ -3,17 +3,21 @@
 }
 
 /********* MAIN *************/
-main{
-	color:white;
+.main-container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: white;
 }
 
 .bg1{
 	background-image: url("../img/picture2.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
+	background-repeat: no-repeat;;
+	background-position: bottom right;
 	background-size:cover;
 	background-attachment:scroll; /*scroll*/
-	height:34%;
+	height:800px;
 	width:100%;
 }
 
@@ -23,17 +27,17 @@ main{
 	background-position: center;
 	background-size:cover;
 	background-attachment:fixed; /*scroll*/
-	height:33%;
+	height:700px;
 	width:100%;
 }
 
 .bg3{
 	background-image: url("../img/picture1.jpg");
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: bottom right;
 	background-size:cover;
 	background-attachment:scroll; /*scroll*/
-	height:33%;
+	height:600px;
 	width:100%;
 }
 
@@ -43,4 +47,5 @@ main{
 	align-items:center;
 	background-color:rgba(0,0,0,0.75);
 	height:100%;
+	width: 100%;
 }
